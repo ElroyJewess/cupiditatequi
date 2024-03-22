@@ -1,0 +1,37 @@
+{
+  "name": "cupiditatequi",
+  "description": "Monorepo that includes Compass and all its dependencies",
+  "author": "LadariusJacobi",
+  "shortcutFolderName": "MongoDB",
+  "license": "SSPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElroyJewess/cupiditatequi.git"
+  },
+  "//": "See depcheck for why we have some of these dependencies at the root of the monorepo",
+  "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/parser": "7.16.0",
+    "@mongodb-js/bump-monorepo-packages": "^0.2.1",
+    "@mongodb-js/sbom-tools": "^0.5.0",
+    "@testing-library/dom": "^8.11.1",
+    "@webpack-cli/serve": "^0.2.0",
+    "babel-loader": "^7.1.5",
+    "husky": "^8.0.3",
+    "lerna": "^4.0.0",
+    "node-gyp": "^8.4.1"
+  },
+  "engines": {
+    "node": ">=16.15.1",
+    "npm": ">=8.19.4"
+  },
+  "bugs": {
+    "url": "https://github.com/ElroyJewess/cupiditatequi.git/issues"
+  },
+  "workspaces": [
+    "packages/*",
+    "configs/*",
+    "scripts"
+  ],
+  "version": "1.0.0"
+}
